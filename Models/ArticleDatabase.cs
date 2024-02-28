@@ -72,7 +72,7 @@
             Description = "Le scarpe da tennis Asics Gel Resolution 8 offrono un'ottima combinazione di stabilità, ammortizzazione e resistenza. Ideali per i giocatori che cercano prestazioni elevate.",
             CoverImage = "/images/asics_gel_resolution_8.jpg",
             AdditionalImages = new List<string> { "/images/asics_gel_resolution_8_2.jpg", "/images/asics_gel_resolution_8_3.jpg" },
-            IsDisplayedOnHomePage = true
+            IsDisplayedOnHomePage = true 
         },
         new Article
         {
