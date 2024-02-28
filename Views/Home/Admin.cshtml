@@ -1,0 +1,26 @@
+﻿@model List<Article>
+@{
+    ViewData["Title"] = "Admin Page";
+}
+<div class="container text-center">
+    <h1>Amministrazione</h1>
+    <button class="btn btn-success m-3">Aggiungi Prodotto</button>
+</div>
+
+<div class="row">
+    @foreach (var article in Model)
+    {
+        <div class="col-3 mb-1">
+            <div class="card shadow-lg" style="width:18rem; height:15rem;">
+                <img src="@article.CoverImage" class="card-img-top" alt="Cover Image">
+                <div class="card-body">
+                    <h5 class="card-title">@article.Name</h5>
+                    <p class="card-text">Prezzo: @article.Price</p>
+                    <a href="@Url.Action("Details", "Article", new { id = article.Id })" class="btn btn-primary">Dettagli</a>
+                    <button class="btn btn-warning">Modifica</button>
+                    <button class="btn btn-danger">Elimina</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

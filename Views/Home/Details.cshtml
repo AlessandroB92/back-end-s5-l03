@@ -1,0 +1,15 @@
+﻿@model Article
+@{
+    ViewData["Title"] = "Dettagli Articolo";
+}
+
+<h1>@Model.Name</h1>
+
+<img src="@Model.CoverImage" alt="Cover Image">
+
+<p>Prezzo: @Model.Price</p>
+<p>Descrizione: @Model.Description</p>
+
+<!-- Aggiungi visualizzazione delle immagini aggiuntive se necessario -->
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary">Torna alla Home</a>
